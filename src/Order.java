@@ -1,3 +1,4 @@
+import java.util.EnumMap;
 import java.util.Scanner;
 
 public class Order {
@@ -38,16 +39,7 @@ public class Order {
     }
 
     public void createProduct(){
-        Scanner in = new Scanner(System.in);
-        System.out.print("Add Product: ");
-        String name = in.nextLine();
-        System.out.print("Quantity: ");
-        int quantity = in.nextInt();
-        System.out.print("Weight for 1 piece: ");
-        double weight = in.nextDouble();
-        System.out.print("Price for 1 piece: ");
-        double price = in.nextDouble();
-        product = new Product(name,quantity,weight,price);
+        product = new Product();
     }
 
     @Override
