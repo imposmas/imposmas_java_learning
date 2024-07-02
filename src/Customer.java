@@ -48,7 +48,7 @@ public class Customer {
         this.customerId = ++counter;
         this.name = name;
     }
-
+    //create customer with orders
     @Override
     public String toString() {
         return "Customer{ " + '\n'+
